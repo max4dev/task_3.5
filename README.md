@@ -3,6 +3,7 @@
 public class Main {
    
    static int[] nums;
+   
    static int i = 0;
 
 
