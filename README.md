@@ -2,6 +2,7 @@
 
 public class Main {
    static int[] nums;
+   
    static int i = 0;
 
 
@@ -11,13 +12,13 @@ public class Main {
         display (i-1);
     }
 
-    static int display (int i) {
+    static void display (int i) {
         if (i == 0) {
-            System.out.println(nums [i]);
-            return i = 0;
+            System.out.println("[" + i + "] - " + nums [i]);
+            return;
         } else {
-            System.out.println(nums [i]);
-            return  display(i-1);
-        }
+            display(i-1);
+            System.out.println("[" + i + "] - " + nums [i]);
+        };
     }
 }
